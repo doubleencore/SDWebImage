@@ -6,12 +6,10 @@
  * file that was distributed with this source code.
  */
 
-@class SDWebImageDownloader;
+#import <Foundation/Foundation.h>
 
-@protocol SDWebImageDownloaderDelegate <NSObject>
+@protocol SDWebImageOperation <NSObject>
 
-@optional
-
-- (void)imageDownloader:(SDWebImageDownloader *)downloader didFinishWithImage:(UIImage *)image;
+- (void)cancel;
 
 @end
